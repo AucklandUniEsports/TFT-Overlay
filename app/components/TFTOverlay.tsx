@@ -19,7 +19,7 @@ export default function TFTOverlay({player_number}:{player_number:string}) {
         </div>
 
         <div className="logos">
-          <img className="logo" src="./sandbox_logo.png" alt="" />
+          <img className="logo" src="/sandbox_logo.png" alt="logo" />
         </div>
       </main>
       <div style={{ padding: "1rem" }}>
