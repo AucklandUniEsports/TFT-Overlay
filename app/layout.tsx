@@ -4,6 +4,8 @@ import "./globals.css";
 
 import { Syne } from 'next/font/google';
 
+import Navigation from "./components/Navigation";
+
 const syne = Syne({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'], // choose what you need
@@ -27,7 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${syne.className}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Navigation/>
+      </body>
     </html>
   );
 }
